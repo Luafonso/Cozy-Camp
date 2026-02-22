@@ -1,0 +1,157 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(167, 167, 167);
+}
+
+
+.cabecalho {
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    background-image: url("/img/floresta.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid rgba(225, 225, 225, 0.2);
+}
+
+
+.principal {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.reserve-btn, .botaoReserva {
+    background-color: #47ce42;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.parteBaixo{
+    padding-top: 25px;
+}
+
+.reservas {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.textoReservas {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.direitos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.botaoReserva:hover {
+    background-color: #3dc038;
+}
+
+.abrirForm {
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgba(225, 225, 225);
+    width: 20%;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .3);
+}
+
+.abrirForm::backdrop{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.abrirForm .dialogo {
+       /*Centralizações*/
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       /*Deixando o formulário bem no centro da tela*/
+       width: auto;
+       height: auto;
+       text-align: center;
+}
+
+
+
+.abrirForm .emailDialog{
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.abrirForm .senhaDialog {
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.abrirForm .botaoDialog {
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #47ce42;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.abrirForm .fechar {
+    margin-inline-start: auto;
+    padding: 5px 7px 5px 7px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    background-color: rgba(225, 225, 225);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        width: auto;
+    }
+
+    .principal {
+        width: auto;
+        margin: auto;
+    }
+
+    .reserve-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .abrirForm {
+        width: 80%;
+    }
+}

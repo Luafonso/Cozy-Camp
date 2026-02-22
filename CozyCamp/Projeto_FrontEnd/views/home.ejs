@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/tent02.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styleHome.css">
+    <title>Cozy Camp</title>
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <h1>Bem-vindo ao Cozy Camp</h1>
+        </header>
+        
+        <main class="principal">
+            <h2 class="sobre">Sobre Nós</h2>
+            <p class="textoSobre">
+                Na Cozy Camp você encontrará os melhores parques para acampar e poderá fazer reservas para suas cabanas com facilidade.
+            </p>
+            <div class="divisor"></div>
+            
+            <h3 class="contatos">Contatos</h3>
+            <p class="textoContato">Onde posso entrar em contato?<br>Nossos contatos:</p>
+            <ul>
+                <li>Email: cozycamp@gmail.com</li>
+                <li>Telefone: +55 (00) 01123-4567</li>
+            </ul>
+        </main>
+       
+        <h4 class="reservas">Reservas</h4>
+        <p class="textoReservas">As melhores cabanas para sua região!</p>
+        <button onclick="gerarForm()" id="botaoReserva" class="botaoReserva">Reserve</button>
+       
+        <!-- Dialogo-->
+     
+        <dialog class="abrirForm">
+            <form id="formLogin" class="dialogo">
+                <button onclick="fecharModal()" class="fechar">X</button>
+                <h1 class="login">LOGIN</h1>
+                <input name="nome" id="emailDialog" type="email" class="emailDialog" placeholder="Digite seu e-mail"><br>
+                <input id="senha" type="password" class="senhaDialog" placeholder="Digite sua senha"><br>
+                <button id="ola" class="botaoDialog">Entrar</button>
+            </form>
+        </dialog>
+
+        <footer class="parteBaixo">
+            <p class="direitos">&copy; 2024 Cozy Camp. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    
+    <script src="/js/login.js"></script>
+</body>
+</html>
